@@ -1,0 +1,338 @@
+*,body{box-sizing: border-box;-webkit-box-sizing: border-box;}
+em,u,i{font-style: normal;text-decoration:none;}
+button,input{border: none !important;}
+.po{position: absolute;}
+.ov{overflow: hidden;}
+.fl{float: left;}
+.fr{float: right;}
+a{color:#333}
+/*a, a:visited{
+-webkit-transition: all 600ms ease-in-out;
+transition: all 600ms ease-in-out;
+}*/
+.cfd{color: #ffd16f;}
+body{min-width: 320px;margin: 0 auto;max-width: 640px;font-size:1.15rem;}
+html,body{height: 100%;}
+.poker_bm img{position: fixed;width: 100%;height: 100%;left: 0;top: 0;}
+/*头部*/
+.poker_top{height:50px;background: rgba(45,45,54,0.6);padding:0 3%;width: 100%;position: fixed;left: 0;top: 0;border-bottom: 1px solid #3d3a48;z-index:18;}
+.pt_fl{height:2.6rem;line-height:2.6rem;border-radius: 1.5rem;border: 1px solid #ffe11a;min-width: 8.0rem;padding: 0 2.3rem 0 2.2rem;font-size: 1.3rem;text-align: center;color: #ffe11a;position: relative;margin-top: 0.7rem;}
+.pt_fl i{display: block;width:1.7rem;height:1.7rem;position: absolute;top: 15%;background-size: 100% !important;background-repeat: no-repeat;background-position: center;}
+.pt_fl i.icon_gold {left: 0.35rem;background-image: url(../images/pk_gold.png);}
+.pt_fl i.icon_more {right: 0.35rem;background-image: url(../images/pk_add.png);}
+.pt_fr{width:45%;margin-top: 0.6rem;}
+.pt_fr li{float:right;margin-left:6%;width:2.8rem;}
+.pt_fr_list{width:9.0rem;padding:0 0.5rem;border:1px solid #b29e30;position: absolute;right: 3%;top:45px;border-radius: 0.5rem;text-align: center;background: rgba(27,25,25,0.6);display: none;}
+.pt_fr_list:before{content:"";display: block;width:1.15rem;height:0.6rem;background: url(../images/pk_sj.png) no-repeat center;background-size: 100%;position: absolute;right:0.8rem;top: -0.6rem;}
+.pt_fr_list a{display: block;color: #fff;font-size: 1.3rem;height: 3.0rem;line-height: 3.1rem;border-bottom: 1px solid #ffe11a;}
+.pt_fr_list a:last-child{border-bottom: none;}
+
+/*底部*/
+.poker_foot{background: #211f24;width: 100%;height:60px;position: fixed;left: 0;bottom: 0;border-top:2px solid #2f2d32;display: table;}
+.poker_touz{margin:0.6rem 3% 0;font-size: 1.2rem;text-align: center;}
+.poker_touz .pf_clearing,.poker_touz .pf_continue,.poker_cm .pc_qd{width: 15.5%;}
+.poker_touz a,.poker_cm .pc_qd a{display: inline-block;height: 3.5rem;border-radius: 0.35rem;text-align: center;color: #999;background: #2d2d30;}
+.poker_touz .pf_clearing a,.poker_touz .pf_continue a{width: 100%;line-height: 3.6rem;}
+.poker_touz .pf_cm{margin:0 0 0 3.5%;width: 62%;overflow: hidden;line-height: 130%;}
+.poker_touz .pf_cm a{border-radius:0;position: relative;width: 25%;float: left;}
+.poker_touz .pf_cm a:after{display: block;content: "";width: 1px;height:2.5rem;background: #211f24;position: absolute;right: 0;top: 0.5rem;}
+.poker_touz .pf_cm a:first-child{border-top-left-radius: 0.35rem;border-bottom-left-radius: 0.35rem;}
+.poker_touz .pf_cm a:last-child{border-top-right-radius: 0.35rem;border-bottom-right-radius: 0.35rem;}
+.poker_touz .pf_cm a:last-child::after{display: none;}
+.poker_touz .pf_cm span{display: block;}
+.poker_touz .pf_cm .st{padding-top: 0.3rem;}
+.poker_touz .pf_cm .bs{font-size:11px;}
+.pf_continue a{background: #796210;color: #23191a;}
+.pf_cm a.active{background:#452f6a;color: #fff;}
+.pf_cm a.unbind{background:#26242a;color: #4c4c4c;}
+.pf_continue a.active{background: #ffcc00;}
+.pf_clearing a.active{background: #373a54;color: #c3c4cc;}
+/*chouma*/
+.poker{height: 100%;}
+.poker_cm{margin:0 2% 0 0;}
+.poker_cm .pc_qd a{background:#ffcc00;color: #23191a;line-height: 3.6rem;width: 100%;margin-top: 0.8rem;}
+.poker_cm .pc_num{width:84%;overflow: hidden;text-align: center;}
+.poker_cm .pc_num ul{padding-bottom: 3px;}
+.poker_cm .pc_num li{float: left;width: 14%;color: #fff;font-size: 1.3rem;position: relative;height:4.5rem;padding-top:0.8rem;}
+.poker_cm .pc_num li .cm_num{font-style: italic;display: block;position: relative;height: 3.5rem;margin-top: 0.5rem}
+.poker_cm .pc_num li:before,.poker_cm .pc_num li:after,.poker_cm .pc_num li .cm_num:before,.poker_cm .pc_num li .cm_num:after{content:"";display: block;position: absolute;}
+.poker_cm .pc_num li:before,.poker_cm .pc_num li:after{width: 50%;height:3px;background: #3e2312;border-top: 1px solid #0b070f;border-bottom: 1px solid #2d2a2a;bottom: 0;}
+.poker_cm .pc_num li:before{left:0;}
+.poker_cm .pc_num li:after{right: 0;}
+.poker_cm .pc_num li .cm_num:before{width:0.4rem;height:1.0rem;background:url(../images/pk_icon5.png) no-repeat center;background-size: 100%;left: 50%;margin-left: -0.2rem;bottom:6px;z-index: 2;}
+
+.poker_cm .pc_num em.icon {display: block;width:11.6%;height: 1.5rem;background: url(../images/pk_icon4.png) no-repeat center;background-size:32%;left: 0;z-index:10;position: absolute;bottom:0;border: none !important;}
+
+.poker_cm .pc_num li:first-child::after{width:53%;}
+.poker_cm .pc_num li:last-child::before{width:54%;}
+.poker_cm .pc_num li:first-child::before,.poker_cm .pc_num li:last-child::after{display:none;}
+.poker_cm .pc_num li.on{color: #ffcc00;}
+.poker_cm .pc_num li.on .cm_num:after{display: block;}
+.poker_cm .pc_num li label{display: block;width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 9;}
+/*zuobianlan*/
+.poker_jl{position: fixed;left: 0;bottom:60px;width:33%;}
+.poker_jl li{width: 100%;background: rgba(23,116,102,0.5);border-radius: 0.5rem;margin-bottom: 2px;padding:0 5%;overflow: hidden;position: relative;color: #a7b9b6;text-align: center;display: table;}
+/*.poker_jl li:first-child:after{content:"";width: 100%;height: 100%;background: url(../images/xz_1.png) no-repeat center;background-size: 100%;position: absolute;left: 0;top: 0;}*/
+.poker_jl li.bup:after{content:"";background: url(../images/xz_2.png) no-repeat center;background-size: 100%;width: 1.2rem;height: 0.6rem;position: absolute;top:50%;left: 50%;margin:-0.3rem 0 0 -0.6rem;}
+.poker_jl li:first-child.bup:after{content:"";width: 100%;height: 100%;background: url(../images/xz_1.png) no-repeat center;background-size: 100%;position: absolute;left: 0;top: 0;margin: 0;}
+.poker_jl li img{position: absolute;right:4%;top:9%;height:82%;
+/*transform: rotateY(180deg);
+-webkit-transform: rotateY(180deg);*/
+}
+.poker_jl li .jl_text{color: #c3c1c1;display: block;text-align: left;font-size: 10px;display: table-cell;vertical-align: middle;}
+.poker_jl li .jl_first{display: block;display: table-cell;vertical-align: middle;}
+/*开奖扑克位置*/
+.poker_imt{width:45%;position: absolute;left:28%;top:97%;}
+.poker_imt .imt_img{position: absolute;left: 0;top: 0;z-index:2;}
+.poker_sm{width: 20%;position: absolute;left:80%;top:124%;}
+/*下注文本说明*/
+.poker_text{position: fixed;width: 50%;right: 5%;bottom:11.5%;color: #67b7ac;text-align: center;}
+.poker_text .lose a{display: inline-block;width:40%;margin-left: 5px;vertical-align:super;}
+.poker_text .windou{color:#ffcc00;}
+.poker_text .first{line-height: 125%;}
+/*荷官*/
+.poker_dealer{position: fixed;right: 3%;top:42px;width: 59.33%;}
+.dealer_box{position: relative;z-index:3;}
+.dealer_love i{display: block;background: url(../images/pk_love.png) no-repeat center;background-size: 100%;position: absolute;z-index: 999;left:60%;top:16%;opacity: 0;}
+.dealer_love i.i1{width:1.0rem;height: 1.0rem;}
+.dealer_love i.i1.ani{
+animation: start1 1.9s linear 0s 1 forwards;
+-webkit-animation:start1 1.9s linear 0s 1 forwards;	
+}
+.dealer_love i.i2{width:1.1rem;height: 1.1rem;}
+.dealer_love i.i2.ani{
+animation: start2 1.8s linear 0.6s 1 forwards;
+-webkit-animation:start2 1.8s linear 0.6s 1 forwards;
+}
+.dealer_love i.i3{width:1.15rem;height: 1.15rem;}
+.dealer_love i.i3.ani{
+animation: start3 2.5s linear 1.0s 1 forwards;
+-webkit-animation:start3 2.5s linear 1.0s 1 forwards;
+}
+.dealer_hair{width: 51%;position: absolute;left:22.5%;top: 0;z-index:10;}
+.dealer_eye>div{width: 10.78%;position: absolute;top:17.2%;z-index:9;}
+.dealer_eye .eye_right{right:38%;display: none;}
+.dealer_hand{width: 58.87%;position: absolute;left: 0;bottom: 0;z-index: 5;
+-webkit-transition: all 600ms ease-in-out;
+transition: all 600ms ease-in-out;
+-webkit-transform-origin:5% 15%;
+transform-origin:5% 15%;
+}
+.dealer_hand.roll{
+-webkit-transform: rotate(20deg);
+transform: rotate(20deg);	
+}
+.dealer_dpai{
+width:3.0rem;position: absolute;left:42%;top:72%;z-index: 2;
+transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+}
+.dealer_pai{width:3.0rem;position: absolute;left:42%;top:72%;z-index: 2;
+transform: rotate(90deg);
+-webkit-transform: rotate(90deg);
+}
+.dealer_pai.roll{
+transform: scale(2.9);
+-webkit-transform: scale(2.9);
+-webkit-transition: all 400ms ease-in-out;
+transition: all 400ms ease-in-out;
+}
+
+.dealer_pai.rollS{left: 42.3%;top: 113.6%;
+-webkit-transition: all 400ms ease-in-out;
+transition: all 400ms ease-in-out;	
+}
+
+.dealer_pai.rollZ{
+transform: scale(2.9) rotateY(180deg);
+-webkit-transform: scale(2.9) rotateY(180deg);
+-webkit-transition: all 1330ms ease-in-out;
+transition: all 1330ms ease-in-out;
+}
+.dealer_pai.rollB{
+transform: scale(1.0) rotateY(180deg);
+-webkit-transform: scale(1.0) rotateY(180deg);
+-webkit-transition: all 800ms ease-in-out;
+transition: all 800ms ease-in-out;
+}
+.dealer_pai.rollR{
+left: 80%;top: 124%;width: 20%;	
+-webkit-transition: all 800ms ease-in-out;
+transition: all 800ms ease-in-out;
+}
+.poker_dom{width:100%;height: 39.0rem;background: #161616;position: fixed;left:0;bottom:-40.0rem;z-index: 99;border-top: 0.25rem solid #4c4f62;color: #a4a4a4;font-size: 1.1rem;
+-webkit-transition: all 400ms ease-in-out;
+transition: all 400ms ease-in-out;
+}
+.poker_beij{width: 100%;height: 100%;position: fixed;left: 0;top: 0;background: rgba(0,0,0,0.6);z-index:19;display: none;}
+.poker_beij_1{width: 100%;height: 100%;position: fixed;left: 0;top:50px;background: rgba(0,0,0,0);z-index:17;display: none;}
+.order_none{width: 80%;position: absolute;left: 10%;top: 15%;}
+.pd_roll{height: 38.4rem;overflow-x: hidden;overflow-y: scroll;}
+.order_list li.lt{overflow: hidden;position: relative;background: #2e2e2e;line-height:180%;margin-bottom:2.5%;padding:0 3%;color: #848484;}
+.order_list li.lt .dat{padding-left: 0.6rem;}
+.order_list .list_top{padding:2% 0;}
+.order_list .list_top .lt_fr{text-align: right;}
+.order_list .list_top .gold{font-size: 1.18rem;color: #cccccb;}
+.order_list .list_top .win{color: #ffcc00;padding-left: 1.7rem;background: url(../images/pk_icon9.png) no-repeat left 2px;background-size: 1.5rem;}
+.order_list .list_dom{color: #e9e9e9;padding:1% 0 2%;border-top:1px dashed #161616;}
+.poker_rule{color: #848484;}
+.poker_rule .rule_imt{background: #2e2e2e;padding:2% 0;}
+.poker_rule .rule_text{padding: 3%;text-align: justify;line-height:170%;font-size: 1.0rem;}
+.poker_rule .rule_text h3.title{color: #cccccb;font-size: 1.2rem;text-align: center;}
+.poker_rule .rule_text .pt{margin-top:3%;}
+.poker_rule .rule_text .pt:nth-of-type(1){margin-top: 0;}
+
+/*是否退出*/
+.tuic_text{position: fixed;left:14%;top:35%;width: 72%;background: #292929;border:3px solid #7d4c34;border-radius:1.6rem;padding:7% 0 6%;text-align: center;color: #fff;box-shadow:0 0 2px #1c1b1e inset;display: none;
+-webkit-transition: all 600ms ease-in-out;
+transition: all 600ms ease-in-out;
+}
+.tuic_text h3.title{font-size: 1.25rem;}
+.tuic_text .btn{margin-top:5%;}
+.tuic_text .btn a{display: inline-block;width:38%;margin:0 5%;}
+/*订单列表*/
+#order_list .order_list li.lt{background: #fff;color: #666;}
+#order_list .order_list .list_top{border-bottom: none;padding-bottom: 0;}
+#order_list .order_list .list_top .gold{color: #666;}
+#order_list .order_list .list_top .win{color: #ed332b;padding-left: 1.7rem;background: url(../images/pk_icon7.png) no-repeat left 2px;background-size: 1.5rem;}
+#order_list .order_list .list_top .lt_fr{color: #b9b9b9;}
+#order_list .order_list .list_top .puke{padding-left: 1.6rem;background: url(../images/pk_icon6.png) no-repeat left 2px;background-size: 1.4rem;}
+#order_list .order_list .list_top .num{color: #b9b9b9;}
+
+/*中奖*/
+.zhongj_text{width: 100%;position: fixed;left:2%;top:35%;background: url(../images/t2.png) no-repeat center top;background-size: 100%;text-align: center;color: #ffcc01;font-size: 2.0rem;height:18.0rem;z-index: 99;
+-webkit-transition: all 1000ms ease-in-out;
+transition: all 1000ms ease-in-out;
+}
+.zhongj_text .zt{display: none;}
+.zhongj_text.nsy{
+transform: scaleY(0);
+-webkit-transform: scaleY(0);
+}
+.zhongj_text.sy{
+transform: scaleY(18.0rem);
+-webkit-transform: scaleY(18.0rem);	
+}
+.zhongj_text.sxy{
+transform:scale(0);
+-webkit-transform:scale(0);	
+}
+.zhongj_text h3.title{font-size: 3.0rem;font-weight: bold;padding:1.6rem 0 0;}
+.zhongj_text .zj_num{line-height:1.5;}
+.zhongj_text .num{font-size: 2.7rem;}
+.zhongj_text a{display: inline-block;width:37%;margin-top:1.0rem;}
+.zhongj_gold i{display: block;background: url(../images/gold.png) no-repeat center;background-size: 100%;position: fixed;z-index: 999;
+/*-webkit-transition: all 2000ms ease-in-out;
+transition: all 2000ms ease-in-out;*/
+
+
+}
+.zhongj_gold i:nth-of-type(n){
+animation: start4 2.0s linear 0s 1 forwards;
+-webkit-animation:start4 2.0s linear 0s 1 forwards;	
+}
+
+.zhongj_gold i:nth-of-type(2n){
+animation: start4 2.5s linear 0.4s 1 forwards;
+-webkit-animation:start4 2.5s linear 0.4s 1 forwards;	
+}
+.zhongj_gold i:nth-of-type(3n){
+animation: start4 2.5s linear 0.7s 1 forwards;
+-webkit-animation:start4 2.5s linear 0.7s 1 forwards;	
+}
+.zhongj_gold i:nth-of-type(4n){
+animation: start4 2.5s linear 1.0s 1 forwards;
+-webkit-animation:start4 2.5s linear 1.0s 1 forwards;	
+}
+
+/*新手指导*/
+.new{width: 100%;position: fixed;left: 0;bottom:-15.0rem;
+-webkit-transition: all 600ms ease-in-out;
+transition: all 600ms ease-in-out;
+}
+/*通关嘉奖*/
+.tongguan{width:32%;position: fixed;left:0;top:43px;display: none;}
+.tongguan h3.num{color: #f0e8c7;font-size: 1.35rem;font-weight: bold;position: absolute;width: 100%;bottom:9%;text-align: center;font-style: italic;left: 10%;}
+/**/
+.poker_dom .orderList{position: relative;}
+.orderList_btn a.btn_info{display: block;width: 100%;height:3.0rem;line-height:3.1rem;background: #5d5f80;color:#e9e9e9;text-align: center;}
+
+/*提示*/
+.tis{width: 100%;position: fixed;bottom:-5.0rem;height: 2.9rem;
+-webkit-transition: all 800ms ease-in-out;
+transition: all 800ms ease-in-out;
+}
+.tis .tis_text{float: left;position: relative;left: 50%;}
+.tis .spn{display: block;background: rgba(0,0,0,0.7);padding:0 0.8rem;border-radius:5px;height:2.8rem;line-height:2.9rem;float: left;color: #fff;position: relative;right: 50%;}
+.tis.top{bottom:5.2rem;}
+/*底部蒙版*/
+.poker_foot_beij{width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 999;background:rgba(0,0,0,0.3);display: none;}
+
+.rule_imt_text{padding-bottom: 3%;}
+.rule_imt_text table{width: 94%;margin:0 auto;color: #a592d6;border-top:0.15rem solid #5a4180;border-left:0.15rem solid #5a4180;}
+.rule_imt_text table td{height:2.8rem;text-align: center;border-right:0.15rem solid #5a4180;border-bottom:0.15rem solid #5a4180;font-size: 11px;}
+.rule_imt_text .rule_num{color: #fff;}
+.rule_imt_text table td.tw1{width: 15%;}
+.rule_imt_text table td.tw2{width:12.14%;}
+
+.poker_zjImgUrl{position: absolute;width:1.0rem;height: 1.0rem;left: 0;top: 0;opacity: 0;}
+
+.st_ty{position: absolute;left: 0;top:0;width: 100%;background: #ed332b;color: #fff;font-size:10px;height: 1.6rem;line-height: 1.9rem;border-radius: 0.3rem;}
+.st_ty:after{content:"";display: block;width: 7px;height: 4px;background:url(../images/tiyan_icon.png) no-repeat center;background-size: 100%;position: absolute;bottom: -4px;left: 50%;margin-left: -4px;}
+
+/*0225修改*/
+.poker_top{height:40px;}
+.pt_fl{margin-top:6px;height:28px;line-height:26px;padding:0 27px;}
+.pt_fr{margin-top:4px;}
+.pt_fl i.icon_gold{left: 4px;top:3px;}
+.pt_fl i.icon_more{right: 4px;top: 3px;}
+.poker_bm img{height:104%;}
+
+/*动画*/
+@keyframes start1{
+	 0%{top:18%;left:60%;opacity: 0;}
+	 40%{transform: scale(1.2);-webkit-transform: scale(1.2);opacity:1.0;}
+   100%{top: -10%;left: 100%;}
+}
+@-webkit-keyframes start1{
+	  0%{top:18%;left:60%;opacity: 0;}
+	 40%{transform: scale(1.2);-webkit-transform: scale(1.2);opacity:1.0;}
+   100%{top: -10%;left: 100%;}
+}
+@keyframes start2{
+	 0%{top:18%;left:60%;opacity: 0;}
+	 40%{transform: scale(1.1);-webkit-transform: scale(1.1);opacity:1.0;}
+   100%{top: -10%;left:90%;}
+}
+@-webkit-keyframes start2{
+	  0%{top:18%;left:60%;opacity: 0;}
+	 40%{transform: scale(1.1);-webkit-transform: scale(1.1);opacity:1.0;}
+   100%{top: -10%;left:90%;}
+}
+@keyframes start3{
+	 0%{top:18%;left:60%;opacity: 0;}
+	40%{transform: scale(1.2);-webkit-transform: scale(1.2);opacity:1.0;}
+   100%{top: -30%;left:85%;}
+}
+@-webkit-keyframes start4{
+	  
+   100%{top: 130%;}
+}
+@-webkit-keyframes start4{
+	 100%{top: 130%;}
+}
+
+
+/*自适应*/
+@media only screen and (max-width:350px) {
+  .zhongj_text{height: 17.0rem;}
+  .tiyan .u1{display: none;}
+}
+
+
+
+
+
+
+
+
